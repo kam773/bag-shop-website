@@ -1,0 +1,21 @@
+{
+  "name": "bags-world",
+  "version": "1.0.0",
+  "description": "Bags world website",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Kamil SMas",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.0",
+    "eslint": "^5.7.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}

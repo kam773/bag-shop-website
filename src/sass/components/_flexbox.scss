@@ -1,0 +1,138 @@
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+
+    @include respond(phone) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+}
+
+.flex-item {
+    border: 1px solid #e5e5e5;
+    background-color: $color-white;
+    height: 40rem;
+    width: 24%;  
+    position: relative;
+
+    @include respond(tab-port) {
+       align-self: center;
+       width: 50%; 
+       text-align: center;
+    
+    }
+
+    @include respond(phone) {
+        align-self: center;
+        width: 70%; 
+        text-align: center;
+       
+    }
+}
+
+.item-img {
+    width: 24rem;
+    height: 24rem;
+    padding: 1rem;
+    transition: all .5s ease;
+
+    @include respond(tab-port) {
+        width: 20rem;
+        height: 20rem;
+    }
+ 
+     @include respond(phone) {
+        width: 16rem;
+        height: 16rem;
+        
+    }
+ 
+}
+
+.banner {
+    overflow: hidden;
+    width: 32%;
+    position: relative;
+
+    @include respond(tab-port) {
+        width: 90%; 
+        align-self: center;      
+    }
+ 
+    @include respond(phone) {      
+        width: 90%; 
+        align-self: center;
+    }
+}
+
+.banner > img {
+    height: 100%;
+    width: 100%;
+    background-position: top;
+
+    @include respond(tab-port) {
+        background-position: center;
+
+    }
+ 
+    @include respond(phone) {      
+        background-position: center;
+    }
+}
+
+.banner-photo {
+    overflow: hidden;
+    transition: transform .3s ease-in-out;
+}
+
+.banner:hover .banner-photo {
+    transform: scale(1.1);
+}
+
+.banner-text {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    text-align: left;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner-text span {
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+}
+
+.banner-text h3 {
+    padding-top: 2rem;
+    letter-spacing: 5px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.flex-item-sellers {
+    display: flex;
+    flex-direction: column;
+    @include respond(tab-port) {
+       justify-content: center;
+       align-items: center;
+    }
+ 
+    @include respond(phone) {   
+        justify-content: center;   
+        align-items: center;
+    }
+}
