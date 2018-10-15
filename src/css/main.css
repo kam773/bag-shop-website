@@ -122,33 +122,6 @@ a.section-link {
   a.section-link:hover {
     color: hotpink; }
 
-/* testimonials section */
-.carousel-inner .carousel-item .img-box {
-  width: 135px;
-  height: 135px; }
-
-.box-1 {
-  background-image: url(../../img/testimonials-img1.jpg); }
-
-.box-2 {
-  background-image: url(../../img/testimonials-img2.jpg); }
-
-.box-3 {
-  background-image: url(../../img/testimonials-img3.jpg); }
-
-p.text-dark {
-  font-size: 1.2rem;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  padding-top: 2rem; }
-
-.carousel-inner .carousel-item {
-  padding-top: 4rem; }
-
-.carousel-testimonial {
-  background-color: #fff;
-  border: 1px solid #e5e5e5;
-  height: 30rem; }
-
 /* footer section */
 .header-footer {
   text-align: center;
@@ -429,6 +402,47 @@ p.text-dark {
   img.item-img {
     width: 80%;
     height: 25rem; } }
+
+/* testimonials section */
+.testimonial-slider {
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  height: 30rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.img-wrapper img {
+  width: 13.5rem;
+  height: 13.5rem;
+  border-radius: 50%;
+  border: 1px solid #e5e5e5;
+  overflow: hidden; }
+
+.img-wrapper {
+  padding: 3rem 0;
+  width: 15rem;
+  height: 15rem;
+  margin: 0 auto; }
+
+.slide-testimonial {
+  text-align: center; }
+
+.testimonial-heading {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgba(253, 194, 0, 0.945); }
 
 .grid {
   display: grid;
